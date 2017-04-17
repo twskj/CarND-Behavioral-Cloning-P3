@@ -9,17 +9,6 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
-
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.
 
@@ -34,13 +23,14 @@ My project includes the following files:
 * model.h5 containing a trained convolution neural network
 * writeup_report.md summarizing the results
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing
+
 ```sh
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
@@ -139,9 +129,11 @@ Then I repeated this process on track two in order to get more data points.
 
 To augment the data sat, I also flipped images and angles thinking that this would balance out the training data because majority of turns are left turns. Here are images that has then been flipped:
 
-![Right Turn](img\turnR.jpg) ![Right Turn Flipped](img\turnRFlipped.jpg)
+![Right Turn](img/turnR.jpg)
+![Right Turn Flipped](img/turnRFlipped.jpg)
 
-![Left Turn](img\turnL.jpg) ![Left Turn Flipped](img\turnLFlipped.jpg)
+![Left Turn](img/turnL.jpg)
+![Left Turn Flipped](img/turnLFlipped.jpg)
 
 
 Total images collected was 12129. After augmented process, I had 24258 to used as my dataset. I then mean normalizing using keras lambda layer.
