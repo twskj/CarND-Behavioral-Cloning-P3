@@ -129,9 +129,11 @@ Then I repeated this process on track two in order to get more data points.
 
 To augment the data sat, I also flipped images and angles thinking that this would balance out the training data because majority of turns are left turns. Here are images that has then been flipped:
 
-![Right Turn](img\turnR.jpg) ![Right Turn Flipped](img\turnRFlipped.jpg)
+![Right Turn](img/turnR.jpg)
+![Right Turn Flipped](img/turnRFlipped.jpg)
 
-![Left Turn](img\turnL.jpg) ![Left Turn Flipped](img\turnLFlipped.jpg)
+![Left Turn](img/turnL.jpg)
+![Left Turn Flipped](img/turnLFlipped.jpg)
 
 
 Total images collected was 12129. After augmented process, I had 24258 to used as my dataset. I then mean normalizing using keras lambda layer.
