@@ -34,6 +34,7 @@ class SimplePIController:
         self.set_point = desired
 
     def update(self, measurement):
+        return 1
         # proportional error
         self.error = self.set_point - measurement
 
