@@ -1,3 +1,9 @@
-windows-sim
+windows-sim*
 me*
-data
+data*
+__pycache__
+old_data
+combined
+good_stuff
+training
+*.zip
